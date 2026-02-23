@@ -32,7 +32,7 @@ public class CalculatorController : ControllerBase
     {
         if (b == 0)
         {
-            return BadRequest("Division by zero is not allowed.");
+            return BadRequest("Ar Sheidzleba nulze gayofa...");
         }
         double quotient = (double)a / b;
         return Ok(quotient);

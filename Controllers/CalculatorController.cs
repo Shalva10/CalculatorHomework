@@ -27,6 +27,7 @@ public class CalculatorController : ControllerBase
         int product = a * b;
         return Ok(product);
     }
+
     [HttpGet("GetNumberDivide")]
     public IActionResult GetNumberDivide(int a, int b)
     {

@@ -37,4 +37,16 @@ public class CalculatorController : ControllerBase
         double quotient = (double)a / b;
         return Ok(quotient);
     }
+
+    [HttpGet("GetNumberModulo")]
+    public IActionResult GetNumberModulo(int a, int b)
+    {
+        if (b == 0)
+        {
+            return BadRequest("Ar sheidzleba nulze gayofa...");
+        }
+
+        int remainder = a % b;
+        return Ok(remainder);
+    }
 }

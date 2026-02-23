@@ -28,17 +28,6 @@ public class CalculatorController : ControllerBase
         return Ok(product);
     }
 
-    [HttpGet("GetNumberDivide")]
-    public IActionResult GetNumberDivide(int a, int b)
-    {
-        if (b == 0)
-        {
-            return BadRequest("Ar Sheidzleba nulze gayofa...");
-        }
-        double quotient = (double)a / b;
-        return Ok(quotient);
-    }
-
     [HttpGet("GetNumberModulo")]
     public IActionResult GetNumberModulo(int a, int b)
     {
